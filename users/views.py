@@ -72,4 +72,5 @@ def deleteUser(request):
     except:
         list['code'] = -1
         list['message'] = '用户删除失败'
+    print('---')
     return HttpResponse(json.dumps(list,ensure_ascii=False),content_type='application/json,charset=utf-8')
